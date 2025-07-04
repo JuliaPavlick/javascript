@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário simples Validação</title>
+
+  <style>
+    form {
+      width: 500px;
+      margin: 20px auto;
+    }
+
+    fieldset {
+      padding: 30px;
+      border: solid 2px gray;
+    }
+
+    legend {
+      font-size: 24px;
+    }
+
+    label {
+      width: 100px;
+      display: inline-block;
+      text-align: right;
+      padding-right: 10px;
+    }
+
+    input[type="text"] {
+      width: 314px;
+      height: 30px;
+    }
+
+    select {
+      margin-top: 20px;
+      height: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <form action="#" name="meuform" id="meuform">
+    <fieldset>
+      <legend>Exemplo Básico de Formulário</legend>
+
+      <label for="textbox1">Nome*</label>
+      <input id="textbox1" name="textName" type="text" /><br><br>
+
+      <label for="Cidades">Cidade:</label>
+      <select name="Cidades" id="Cidades">
+        <option value="">Selecione uma Cidade</option>
+        <option value="Joinville-SC">Joinville-SC</option>
+        <option value="Curitiba-PR">Curitiba-PR</option>
+        <option value="Florianópolis-SC">Florianópolis-SC</option>
+        <option value="Porto-Alegre-RS">Porto Alegre-RS</option>
+      </select><br><br>
+
+      <label>Sexo:</label>
+      <input name="sexo" type="radio" value="Masculino" />Masculino
+      <input name="sexo" type="radio" value="Feminino" />Feminino<br><br>
+
+      <label>Rede Social:</label>
+      <input name="Rede" type="checkbox" value="Facebook" />Facebook
+      <input name="Rede" type="checkbox" value="Twitter" />Twitter
+      <input name="Rede" type="checkbox" value="Orkut" />Orkut
+      <input name="Rede" type="checkbox" value="MSN" />MSN
+      <input name="Rede" type="checkbox" value="Tiktok" />Tiktok<br><br>
+
+      <input id="botaosub" type="submit" value="Enviar" />
+    </fieldset>
+  </form>
+
+  <andress>
+    Júlia Caroline Borges Pavlick
+  </andress>
+
+  <script src="../javascript/js/validacao_form.js"></script>
+</body>
+</html>
